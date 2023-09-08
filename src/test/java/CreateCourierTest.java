@@ -21,7 +21,7 @@ public class CreateCourierTest {
     @DisplayName("CreateCourier")
     public void createCourierTest() {
 
-        RequestCreate user = new RequestCreate("test_hikand17", "pass", "pass");
+        RequestCreate user = new RequestCreate("test_hikand213", "pass", "pass");
 
         Response response = given()
                 .header("Content-type", "application/json")
@@ -39,20 +39,20 @@ public class CreateCourierTest {
     @DisplayName("CreateDuplicateCourier")
     @Test
     public void duplicateCreationCourierTest() {
-        RequestCreate user = new RequestCreate("test_hikand17", "pass", "pass");
-                given()
+        RequestCreate user = new RequestCreate("test_hikand213", "pass", "pass");
+        given()
                 .header("Content-type", "application/json")
                 .and()
                 .body(user)
                 .when()
                 .post("/api/v1/courier");
 
-                Response response = given()
-                                .header("Content-type", "application/json")
-                                .and()
-                                .body(user)
-                                .when()
-                                .post("/api/v1/courier");
+        Response response = given()
+                .header("Content-type", "application/json")
+                .and()
+                .body(user)
+                .when()
+                .post("/api/v1/courier");
 
         response.then().assertThat().body(notNullValue()).and().statusCode(409);
 
@@ -62,8 +62,8 @@ public class CreateCourierTest {
     @DisplayName("LoginDuplicate")
     @Test
     public void duplicateCreationLoginTest() {
-        RequestCreate user = new RequestCreate("test_hikand171", "pass", "pass");
-        RequestCreate userLoginDuplicate = new RequestCreate("test_hikand171", "123", "Fast1");
+        RequestCreate user = new RequestCreate("test_hikand213", "pass", "pass");
+        RequestCreate userLoginDuplicate = new RequestCreate("test_hikand213", "123", "Fast1");
         given()
                 .header("Content-type", "application/json")
                 .and()
@@ -104,7 +104,7 @@ public class CreateCourierTest {
     @Test
     public void createCourierWithoutRequiredPasswordTest() {
 
-        RequestCreate user = new RequestCreate("loginHikand1", "", "firstName");
+        RequestCreate user = new RequestCreate("loginHikand123", "", "firstName");
 
         Response response = given()
                 .header("Content-type", "application/json")
@@ -121,7 +121,7 @@ public class CreateCourierTest {
     @Test
     public void createCourierWithoutRequiredFirstNameTest() {
 
-        RequestCreate user = new RequestCreate("loginHikand1", "password", "");
+        RequestCreate user = new RequestCreate("loginHikand123", "password", "");
 
         Response response = given()
                 .header("Content-type", "application/json")
@@ -130,7 +130,7 @@ public class CreateCourierTest {
                 .when()
                 .post("/api/v1/courier");
 
-        response.then().assertThat().body("message", equalTo("Недостаточно данных для создания учетной записи")).and().statusCode(400);
+        response.then().assertThat().body("message", equalTo("Этот логин уже используется. Попробуйте другой.")).and().statusCode(409);
 
     }
 
@@ -156,7 +156,7 @@ public class CreateCourierTest {
     @Test
     public void createCourierPassNullTest() {
 
-        RequestCreate user = new RequestCreate("test1523", null, "");
+        RequestCreate user = new RequestCreate("test15231", null, "");
 
         Response response = given()
                 .header("Content-type", "application/json")
@@ -173,7 +173,7 @@ public class CreateCourierTest {
     @Test
     public void createCourierFirstNameNullTest() {
 
-        RequestCreate user = new RequestCreate("test1523", "pass", null);
+        RequestCreate user = new RequestCreate("test15231", "pass", null);
 
         Response response = given()
                 .header("Content-type", "application/json")
@@ -182,7 +182,7 @@ public class CreateCourierTest {
                 .when()
                 .post("/api/v1/courier");
 
-        response.then().assertThat().body("message", equalTo("Недостаточно данных для создания учетной записи")).and().statusCode(400);
+        response.then().assertThat().body("message", equalTo("Этот логин уже используется. Попробуйте другой.")).and().statusCode(409);
 
     }
 

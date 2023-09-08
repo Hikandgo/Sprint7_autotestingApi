@@ -4,9 +4,67 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb22e29b-413d-49cf-9c12-f417c76156ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="862a4883-ed0b-4356-9f8b-b7bdaea3be12" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateCourierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateCourierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/behaviors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/categories.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/packages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/suites.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/1bdb04147beeb421.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/21b847707a88e861.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/47f2463a61f98477.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/6db7691bac66bbb0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/837d230635cdede2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/90af302642a282b5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/9369bdd2cf64e382.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/a3b485a8f897bce0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/a5d9c30756300fdb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/ae16574dd7e17d64.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/b20c50110acf43eb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/b4aec34977bd06de.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/b607696ca1ced8f9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/bdc89b7ca462bd35.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/cfd3814ef9fea55b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/e4b8c2a361094fae.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/f4d685fd362e9732.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/test-cases/fa9c4d18a5f98155.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/data/timeline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/export/influxDbData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/export/mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/export/prometheusData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/history/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/history/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/history/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/history/history.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/history/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/plugins/behaviors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/plugins/packages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/plugins/screen-diff/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/plugins/screen-diff/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/duration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/executors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/severity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/status-chart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/allure-results/widgets/summary.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +73,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,17 +90,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Projects/Sprint7_autotestingApi&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Sprint_7 [test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fb22e29b-413d-49cf-9c12-f417c76156ea" name="Changes" comment="" />
+      <changelist id="862a4883-ed0b-4356-9f8b-b7bdaea3be12" name="Changes" comment="" />
       <created>1693155510719</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

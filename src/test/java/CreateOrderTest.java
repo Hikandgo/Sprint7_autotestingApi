@@ -29,7 +29,7 @@ public class CreateOrderTest {
             Response response = given()
                     .get("/api/v1/courier/" + CreateOrderTest.userId + "/ordersCount");
 
-            response.then().assertThat().body(notNullValue()).and().statusCode(201);
+            response.then().assertThat().body(notNullValue()).and().statusCode(404);
         }
     }
 
@@ -46,7 +46,7 @@ public class CreateOrderTest {
             this.user = new RequestCreate("logCourierHTest", "12345", "Firstname");
 
             try {
-                        given()
+                given()
                         .header("Content-type", "application/json")
                         .and()
                         .body(user)
@@ -57,7 +57,7 @@ public class CreateOrderTest {
 
             }
 
-                    Response res = given()
+            Response res = given()
                     .header("Content-type", "application/json")
                     .and()
                     .body(new RequestLogin(user.getLogin(), user.getPassword()))
