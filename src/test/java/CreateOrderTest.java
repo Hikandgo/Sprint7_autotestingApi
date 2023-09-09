@@ -20,6 +20,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 @RunWith(Enclosed.class)
 public class CreateOrderTest {
 
+    // Проверяем создание заказов и проверяем корзину у того-же юзера
     public static int userId;
 
     public static class CheckOrdersCourierTest {
@@ -54,7 +55,7 @@ public class CreateOrderTest {
                         .post("/api/v1/courier");
 
             } catch (Error e) {
-
+                System.out.println(e.getMessage());
             }
 
             Response res = given()

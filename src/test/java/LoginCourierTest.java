@@ -28,8 +28,8 @@ public class LoginCourierTest {
                     .body(user)
                     .when()
                     .post("/api/v1/courier");
-        } catch (Error er) {
-
+        } catch (Error e) {
+            System.out.println(e.getMessage());
         }
 
     }
@@ -51,6 +51,7 @@ public class LoginCourierTest {
     @Test
     public void loginCourierWithoutLoginTest() {
 
+        // Проверка на логин курьера без передачи всех обязательных полей (только ЛОГИН)
         Response res = given()
                 .header("Content-type", "application/json")
                 .and()
@@ -64,6 +65,7 @@ public class LoginCourierTest {
     @Test
     public void loginCourierWithoutPassTest() {
 
+        // Проверка на логин курьера без передачи всех обязательных полей (только ПАРОЛЬ)
         Response res = given()
                 .header("Content-type", "application/json")
                 .and()
@@ -77,6 +79,7 @@ public class LoginCourierTest {
     @Test
     public void loginNoNCourierTest() {
 
+        // Проверка на логин несуществующей учетной записи
         Response res = given()
                 .header("Content-type", "application/json")
                 .and()
