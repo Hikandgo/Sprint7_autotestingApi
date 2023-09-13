@@ -55,7 +55,7 @@ public class LoginCourierTest {
         Response res = given()
                 .header("Content-type", "application/json")
                 .and()
-                .body(this.user.getLogin())
+                .body(new RequestLogin(this.user.getLogin(), ""))
                 .when()
                 .post("/api/v1/courier/login");
 
@@ -66,10 +66,11 @@ public class LoginCourierTest {
     public void loginCourierWithoutPassTest() {
 
         // Проверка на логин курьера без передачи всех обязательных полей (только ПАРОЛЬ)
+
         Response res = given()
                 .header("Content-type", "application/json")
                 .and()
-                .body(this.user.getPassword())
+                .body(new RequestLogin(null, this.user.getPassword()))
                 .when()
                 .post("/api/v1/courier/login");
 
